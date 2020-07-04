@@ -11,8 +11,8 @@
   <li>The Search for the weather of a city by typing the city name in the textbox you will see in the page<br>
     and you will see the weather forecast of that city in a tabular form,<br>
     if you scroll down you will see that accurate weather in some knowing text, as a weather forecaster reader.</li>
-  <li>You will see two buttons after that below! the left side is the "Back" button, if you click on that<br>
-      you will again go to the form page. and right side is the "More" button, if you click on that button<br>
+  <li>You will see two buttons after that below! The left side is the "Back" button, if you click on that<br>
+      you will again go to the form page and on the right side is the "More" button, if you click on that button<br>
       you will go to google.com with the same input of weather and you will get the same weather forecast with more information.
     .</li>
 </p>
