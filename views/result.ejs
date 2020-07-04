@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <link rel="icon" href="https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Lemon&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <style>
+            body{
+                font-family: 'Lemon', cursive;
+                padding: 5px;
+                background-image: url('https://images.unsplash.com/photo-1445768593937-05a3f7832b68?fit=crop&fm=jpg&h=650&ixlib=rb-0.3.5&q=80&w=1375');
+            }
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+              font-size: 17px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+            .thumbnail{
+              padding: 5px;
+              margin: 5px;
+              box-shadow: 0 6px 20px 25px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+            }
+            </style>
+      <div class="thumbnail">
+        <table>
+            <tr style="font-family: 'Lemon', cursive;">
+              <th>Task:</th>
+              <th>Result:</th>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>City:</td>
+              <td><%=query.location.name%>, <%=query.location.region%> - <%=query.location.country%></td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>Latitude Logitude:</td>
+              <td><%=query.location.lat%>, <%=query.location.lon%></td>
+          </tr>
+          <tr style="font-family: 'Lemon', cursive;">
+            <td>Local Time:</td>
+            <td><%=query.location.localtime%></td>
+        </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>Temperature:</td>
+              <td><%=query.current.temperature%>°C - <%=query.current.weather_descriptions%></td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>Humidity:</td>
+              <td><%=query.current.humidity%></td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>Wind Direction:</td>
+              <td><%=query.current.wind_dir%></td>
+            </tr style="font-family: 'Lemon', cursive;">
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>Is Day:</td>
+              <td><%=query.current.is_day%></td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+              <td>UV_Index:</td>
+              <td><%=query.current.uv_index%></td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+                <td>Pressure:</td>
+                <td><%=query.current.pressure%> MB</td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+                <td>Precipitation:</td>
+                <td><%=query.current.precip%> MM</td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+                <td>Wind Speed:</td>
+                <td><%=query.current.wind_speed%> km/h</td>
+            </tr>
+            <tr style="font-family: 'Lemon', cursive;">
+                <td>Wind Degree:</td>
+                <td><%=query.current.wind_degree%>°</td>
+            </tr>
+          </table>
+          <div class="caption" style="max-height: auto;">
+            <h1 style="font-family: 'Lemon', cursive;" align="center">Result: </h1>
+            <hr>
+            <h4 style="font-family: 'Lemon', cursive;" align="center">
+              Currently in <%=query.location.name%> it is <%=query.current.temperature%>°C with <%=query.current.weather_descriptions%>. Today there is <%=query.current.precip%>MM% chance of rain with Cloud Cover of <%=query.current.cloudcover%>% of the sky. The Humidity of <%=query.location.name%> is currently <%=query.current.humidity%> with a UV_Index of <%=query.current.uv_index%>. The air pressure is <%=query.current.pressure%> MB(MilliBar) and the Wind Direction is towards 
+              <%=query.current.wind_dir%> at a degree of <%=query.current.wind_degree%>. The wind speed there is <%=query.current.wind_speed%> km/h. It currently feels like <%=query.current.feelslike%>°C with <%=query.current.weather_descriptions%>.<img style="width: 40px; border-radius: 10px;" src="<%=query.current.weather_icons%>">
+            </h4>
+            <h4 style="font-family: 'Lemon', cursive;">Thank You.. for using Weather Forecaster</h4>
+            <a href="/" class="btn btn-primary btn-lg"><i class="left chevron icon"></i>Back</a>
+            <form style="display: inline;">
+              <a title="Get More Forecast of <%=query.location.name%> on Google.." class="btn btn-primary btn-lg" style="float: right;" href="https://www.google.com/search?q=weather+of+<%=query.location.name%>+-+<%=query.location.country%>+on+<%=query.location.localtime%>+&rlz=1C1CHBD_enIN875IN875&oq=weather+of+<%=query.location.name%>,+<%=query.location.region%>+-+<%=query.location.country%>+on+<%=query.location.localtime%>&aqs=chrome.0.69i59j0l4j69i60l3.5308j0j4&sourceid=chrome&ie=UTF-8" target="new">More <i class="right chevron icon"></i></a>
+            </form>
+          </div>
+        </div>
+        <div style="margin: 20px;">
+          <hr>
+          <p style="font-family: 'Lemon', cursive; border: 0; color: white;">© 2020 Weather Forecaster, Inc</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecaster</title>
+    <link rel="icon" href="https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+
+<body style="padding-top: 50px; background-image: url('https://images.unsplash.com/photo-1445768593937-05a3f7832b68?fit=crop&fm=jpg&h=650&ixlib=rb-0.3.5&q=80&w=1375');">
+    <h1 align="center" style="font-family: 'Lemon', cursive; color: white;">Weather Forecaster</h1>
+    <p align="center" style="font-family: 'Lemon', cursive; color: white;">Search for a city to get it's weather forecast!</p>
+    <div class="ui main text container segment" style="box-shadow: 0 6px 20px 20px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); ">
+        <form action="/result" method="POST" class="ui form">
+            <div align="center" style="font-family: 'Lemon', cursive;" class="field">
+                <label for="search">Enter City Name: </label>
+                <input autocomplete="off" placeholder="City Name.." style="font-family: 'Lemon', cursive;"
+                    class="form-control" type="text" name="query" id="search">
+            </div>
+            <button style="font-family: 'Lemon', cursive; border: 0" class="ui violet big basic button btn btn-block">Search</button>
+        </form>
+    </div>
+    <div class="fixed-bottom" style="margin: 20px;">
+      <hr>
+      <p style="font-family: 'Lemon', cursive; border: 0; color: white;">© 2020 Weather Forecaster, Inc</p>
+    </div>
+</body>
+
+</html>
