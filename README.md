@@ -19,4 +19,4 @@
 <hr>
 <h6>Thanks</h6>
 <h5>Siddharth Kumar</h5>
-<p align="right">Version: 1.0.0</p>
+<p align="right">Version: 1.0.0(Latest)</p>
