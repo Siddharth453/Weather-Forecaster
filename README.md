@@ -8,7 +8,7 @@
 </p>
 <h2>Guides: </h2>
 <p><li>First Click on the URL(Given Above).</li>
-  <li>The Search for the weather of a city by typing the city name in the textbox you will see in the page<br>
+  <li>Then Search for the weather of a city by typing the city name in the textbox you will see in the page<br>
     and you will see the weather forecast of that city in a tabular form,<br>
     if you scroll down you will see that accurate weather in some knowing text, as a weather forecaster reader.</li>
   <li>You will see two buttons after that below! The left side is the "Back" button, if you click on that<br>
