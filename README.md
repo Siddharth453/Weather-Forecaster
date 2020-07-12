@@ -1,4 +1,6 @@
-<img src="https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png" align="center">
+<div align="center">
+<img width="150px" src="https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png">
+</div>
 <h1>Want to get the weather of a place you want? Weather Forecaster is There!</h1>
 <p>Let's Go to a journey of our new app "Weather Forecaster" which released on 7/4/2020.<br>
   This app has a very styled user interface where you can get the weather of any place you want just<br>
