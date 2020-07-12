@@ -2,7 +2,7 @@
 <p>Let's Go to a journey of our new app "Weather Forecaster" which released on 7/4/2020.<br>
   This app has a very styled user interface where you can get the weather of any place you want just<br>
   by typing the city name and then clicking the button! Any country, any state and any place just type the City And<br>
-  you can get accurate weather of that place! So, get rady just click on the link below and get<br>
+  you can get accurate weather of that place! So, get ready just click on the link below and get<br>
   your first weather forecast of the place you want.<br>
   <a href="https://weather-forecaster1.herokuapp.com/">Let's Go!</a>
 </p>
