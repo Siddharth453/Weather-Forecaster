@@ -25,7 +25,9 @@
                 <input autocomplete="off" placeholder="City Name.." style="font-family: 'Lemon', cursive;"
                     class="form-control" type="text" name="query" id="search">
             </div>
-            <button style="font-family: 'Lemon', cursive; border: 0" class="ui violet big basic button btn btn-block">Search</button>
+            <button style="font-family: 'Lemon', cursive; border: 0" class="ui violet big basic button btn btn-block">Search..</button>
+            <br><br>
+            <a onclick="getLocation()" style="font-family: 'Lemon', cursive; border: 0" class="ui violet big basic button btn btn-block">Search the weather for your location.</a>
         </form>
     </div>
     <div class="fixed-bottom" style="margin: 20px;">
@@ -33,5 +35,16 @@
       <p style="font-family: 'Lemon', cursive; border: 0; color: white;">© 2020 Weather Forecaster, Inc</p>
     </div>
 </body>
-
+<script>
+    function getLocation(){
+        if(!navigator.geolocation){
+            return alert('Geolocation not supported in your browser')
+        }
+        navigator.geolocation.getCurrentPosition((position) => {
+          const $search = document.querySelector('#search');
+          $search.value = position.coords.latitude + "," + position.coords.longitude;
+          $search.focus();
+        });
+    }
+</script>
 </html>
