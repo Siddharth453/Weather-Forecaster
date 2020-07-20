@@ -27,6 +27,12 @@
   <li>A great user Interface.</li>
   
 </p>
+<code>
+  Note: The code of form.ejs is below
+</code>
+```HTML
+
+```
 <hr>
 <h6>Thanks</h6>
 <h5>Siddharth Kumar</h5>
