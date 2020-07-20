@@ -19,7 +19,15 @@
       you will go to google.com with the same input of weather and you will get the same weather forecast with more information.
     .</li>
 </p>
+<h2>Features: </h2>
+<p>
+  <li>You can get the weather of any location you want..</li>
+  <li>Do not have to type, just click on the button "Search the weather for your location." and you will get the weather of your location where you are!</li>
+  <li>Very easy to operate the website.</li>
+  <li>A great user Interface.</li>
+  
+</p>
 <hr>
 <h6>Thanks</h6>
 <h5>Siddharth Kumar</h5>
-<p align="right">Version: 1.0.0(Latest)</p>
+<p align="right">Version: 1.0.1(Latest)</p>
