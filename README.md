@@ -27,33 +27,7 @@
   <li>A great user Interface.</li>
   
 </p>
-```HTML
-<% include ../partials/header %>
-    <div class="row">
-        <h1 style="text-align: center">Create a New Campground</h1>
-        <div style="width: 30%; margin: 25px auto;">
-            <form action="/campgrounds" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <input class="form-control" type="text" name="campground[name]" placeholder="name">
-                </div>
-                <div class="form-group">
-                    <label for="image">Image</label>
-                    <input type="file" id="image" name="image" accept="image/*" required>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" name="campground[description]" placeholder="description">
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
-                </div>
-            </form>
-            <a href="/campgrounds">Go Back</a>
-        </div>
-    </div>
-<% include ../partials/footer %>
 
-
-```
 <hr>
 <h6>Thanks</h6>
 <h5>Siddharth Kumar</h5>
