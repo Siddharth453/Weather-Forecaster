@@ -7,7 +7,7 @@
   by typing the city name and then clicking the button! Any country, any state and any place just type the City And<br>
   you can get accurate weather of that place! So, get ready just click on the link below and get<br>
   your first weather forecast of the place you want.<br>
-  <a href="https://weather-forecaster1.herokuapp.com/">Let's Go!</a>
+  [Let's Go!] (https://weather-forecaster1.herokuapp.com)
 </p>
 <h2>Guides: </h2>
 <p><li>First Click on the URL(Given Above).</li>
@@ -27,12 +27,6 @@
   <li>A great user Interface.</li>
   
 </p>
-<code>
-  Note: The code of form.ejs is below
-</code>
-```HTML
-
-```
 <hr>
 <h6>Thanks</h6>
 <h5>Siddharth Kumar</h5>
